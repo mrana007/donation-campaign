@@ -4,7 +4,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const DonateCard = ({donate}) => {
 
-    const {id, image, title, description, price} = donate || {};
+    const {id, image, title, description, price, button_bg} = donate || {};
 
     const handleAddToDonation = ()=>{
 
@@ -39,7 +39,7 @@ const DonateCard = ({donate}) => {
                 <div className="hero"></div>
                 <div className="hero-content text-center text-neutral-content">
                 <div className="absolute justify-center bottom-8 md:left-6 md:bottom-16">
-                <button onClick={handleAddToDonation} className="btn btn-primary bg-[#FF444A] normal-case">Donate ${price}</button>
+                <button onClick={handleAddToDonation} className="btn btn-primary normal-case" style={{backgroundColor: button_bg}}>Donate ${price}</button>
                 </div>
             </div>
         </div>

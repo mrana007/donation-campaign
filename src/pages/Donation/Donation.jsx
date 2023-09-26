@@ -16,7 +16,7 @@ const Donation = () => {
             setDonations(donateItem)
         }
         else{
-            setNotFound('No Donation Found')
+            setNotFound('No Donation Yet')
         }
     },[])
 

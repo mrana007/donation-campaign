@@ -6,7 +6,7 @@ const Navbar = () => {
     <div className="max-w-screen-xl mx-auto pt-12">
       <nav className="md:flex justify-between items-center">
         <Logo></Logo>
-        <ul className="md:flex gap-12">
+        <ul className="md:flex gap-12 px-3">
           <div className="flex justify-center">
           <li>
             <NavLink

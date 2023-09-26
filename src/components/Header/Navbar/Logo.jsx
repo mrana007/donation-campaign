@@ -2,8 +2,8 @@
 
 const Logo = () => {
     return (
-        <div className="flex justify-center">
-            <img src="/src/assets/resources/Logo.png" alt="" />
+        <div className="flex my-auto items-center justify-center">
+            <img src="https://i.ibb.co/G98sbYm/Logo.png" alt="" />
         </div>
     );
 };

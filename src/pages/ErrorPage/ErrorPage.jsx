@@ -2,8 +2,8 @@
 
 const ErrorPage = () => {
     return (
-        <div>
-            <h2>Oops!!!</h2>
+        <div className="text-center">
+            <h2 className="text-9xl items-center justify-center">Oops!!!</h2>
         </div>
     );
 };
