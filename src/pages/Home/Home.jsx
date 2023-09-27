@@ -8,16 +8,16 @@ const Home = () => {
 
     const donations = useLoaderData();
     const [searchCategory, setSearchCategory] = useState('');
-    const [categoryVal, setCategoryVal] = useState('');
+    const [categoryValue, setCategoryValue] = useState('');
 
     const handleSearch = (event) => {
-        const val = event.target.value;
-        setCategoryVal(val);
+        const search = event.target.value;
+        setCategoryValue(search);
     }
 
     return (
         <div>
-           <Banner handleSearch={handleSearch} categoryVal={categoryVal} setSearchCategory={setSearchCategory} ></Banner>
+           <Banner handleSearch={handleSearch} categoryValue={categoryValue} setSearchCategory={setSearchCategory} ></Banner>
            <Donations donations={donations} searchCategory={searchCategory}></Donations>
         </div>
     );

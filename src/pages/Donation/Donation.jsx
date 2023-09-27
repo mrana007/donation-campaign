@@ -33,7 +33,7 @@ const Donation = () => {
                     </div>
                     <div className="flex justify-center my-8">
                         {
-                            donations?.length > 4 && <button onClick={() => setIsShow(!isShow)} className="btn normal-case bg-[#009444] w-28 h-12 rounded-lg text-white">{isShow ? "See Less" : "See All"}</button>
+                            donations?.length > 4 && <button onClick={() => setIsShow(!isShow)} className="normal-case bg-[#009444] w-28 h-12 rounded-lg text-white">{isShow ? "See Less" : "See All"}</button>
                         }
                     </div>
                 </div>
