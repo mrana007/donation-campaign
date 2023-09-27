@@ -19,7 +19,7 @@ const DonateCard = ({donate}) => {
         }
         else{
 
-            const isExists = donationItems.find(donate => donate.id ==id);
+            const isExists = donationItems.find(donate => donate.id == id);
 
             if(!isExists){
                 addedDonationArray.push(...donationItems, donate);

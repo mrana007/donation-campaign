@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 
-
 const DonatedCard = ({donation}) => {
 
     const {category, title, donate_image, card_bg, text_color, category_bg, button_bg, price} = donation || {}; 

@@ -12,7 +12,7 @@ const Donate = () => {
     const donations = useLoaderData();
 
     useEffect(()=>{
-        const findDonate = donations?.find(donate=>donate.id== id)
+        const findDonate = donations?.find(donate => donate.id == id)
         setDonate(findDonate);
         
     },[id, donations])

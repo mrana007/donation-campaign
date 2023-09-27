@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import { NavLink } from "react-router-dom";
 
-
 const DonationsCard = ({donate}) => {
 
     const {id, image, category, title, card_bg, text_color, category_bg} = donate || {};

@@ -4,11 +4,9 @@ import Banner from "../../components/Header/Banner/Banner";
 import { useState } from "react";
 
 
-
 const Home = () => {
 
     const donations = useLoaderData();
-   
     const [searchCategory, setSearchCategory] = useState('');
     const [categoryVal, setCategoryVal] = useState('');
 

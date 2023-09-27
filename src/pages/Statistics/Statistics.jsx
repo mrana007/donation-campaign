@@ -11,7 +11,7 @@ const Statistics = () => {
     labels: ['Your Donation', 'Total Donation',],
     colors: ['#00C49F', '#FF444A'],
     legend: {
-      position: 'bottom'
+      position: 'bottom',
     },
   };
 
