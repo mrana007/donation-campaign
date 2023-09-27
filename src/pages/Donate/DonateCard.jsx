@@ -15,7 +15,7 @@ const DonateCard = ({donate}) => {
         if(!donationItems){
             addedDonationArray.push(donate);
             localStorage.setItem('donations', JSON.stringify(addedDonationArray));
-            toast("Donate successfully");
+            toast("Congratulations! Donate successfully");
         }
         else{
 
@@ -24,26 +24,23 @@ const DonateCard = ({donate}) => {
             if(!isExists){
                 addedDonationArray.push(...donationItems, donate);
                 localStorage.setItem('donations', JSON.stringify(addedDonationArray));
-                toast("Donate successfully");
+                toast("Congratulations! Donate successfully");
             }
             else{
-                toast("Already donate");
+                toast("Already donate this item");
             }
         }
     }
 
     return (
-        <div className="w-full px-24">
-            <div className="hero h-[60vh] relative">
-                <img className="md:w-full md:h-[50vh]"src={image} alt="" />
-                <div className="hero"></div>
-                <div className="hero-content text-center text-neutral-content">
-                <div className="absolute justify-center bottom-8 md:left-6 md:bottom-16">
+        <div className="px-5 pt-10 md:px-36">
+            <div className="relative">
+                <img className="w-full md:h-[50vh]"src={image} alt="" />
+                <div className="absolute inset-x-0 bottom-0 left-0 bg-opacity-50 bg-black py-5 px-3">
                 <button onClick={handleAddToDonation} className="btn btn-primary normal-case" style={{backgroundColor: button_bg}}>Donate ${price}</button>
-                </div>
             </div>
         </div>
-        <h1 className="text-4xl font-bold pb-4">{title}</h1>
+        <h1 className="text-4xl font-bold pb-4 pt-8">{title}</h1>
         <p>{description}</p>
         <ToastContainer />
     </div>
