@@ -7,7 +7,7 @@ const DonationsCard = ({donate}) => {
 
     return (
     <NavLink to={`/donations/${id}`}>
-        <div className="card card-compact shadow-xl"
+        <div className="card card-compact w-full h-full bg-base-100 shadow-xl"
             style={{backgroundColor: card_bg, color: text_color}}>
             <figure><img className="w-full" src={image} alt="Donations" /></figure>
             <div className="card-body px-4">

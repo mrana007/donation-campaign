@@ -6,9 +6,9 @@ const DonatedCard = ({donation}) => {
 
     return (
         <div>
-            <div className="card card-side shadow-xl" style={{backgroundColor: card_bg, color: text_color}}>
-                <figure><img className="h-full w-72" src={donate_image} alt="" /></figure>
-                <div className="p-4">
+            <div className="card h-52 card-side bg-base-100 shadow-xl" style={{backgroundColor: card_bg, color: text_color}}>
+                <figure><img className="h-full w-60" src={donate_image} alt="" /></figure>
+                <div className="p-4 w-2/3">
                     <h2 className="rounded w-20 text-center" style={{backgroundColor: category_bg}}>{category}</h2>
                     <p className="text-2xl text-black font-bold">{title}</p>
                     <p className="font-semibold">${price}</p>
